@@ -1,20 +1,3 @@
-// // TODO: Include packages needed for this application
-
-// // TODO: Create an array of questions for user input
-// const questions = [];
-
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
-
-
-
-
 const inquirer = require('inquirer');
 const fs = require('fs');
 // const {url} = require('inspec(tor');
@@ -22,8 +5,8 @@ const path = require('path')
 const  generateMarkDown = require('./utils/generatemarkDown')
 //ask all the questions using the inquire toolbox/prompt
 
-//from there, we have thr gigantic string of text that we need to get onto the readme
-
+// // TODO: Create an array of questions for user input
+// const questions = [];
 const questions = [  //the input the user will be providing. npm doc is the tool box and these properties are our tools
     {
       type: 'input',
@@ -81,6 +64,8 @@ const questions = [  //the input the user will be providing. npm doc is the tool
     //want to return the writefilesync function and join in the current workin directory, wt=uth the filename and the data
   }
 
+  // // TODO: Create a function to initialize app
+// function init() {}
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt (questions).then((inquirerResponses) => {
@@ -89,5 +74,7 @@ function init() {
   })
 }
 
+// // Function call to initialize app
+// init();
 // Function call to initialize app
 init();
